@@ -1,0 +1,64 @@
+strategy,qid,rank,chunk_id,source,page,part,articles,auto_page_text_match,auto_expected_part,auto_expected_articles,auto_all_ok,filter_part,in_filter_scope
+A,q01,1,luat-shtt-hn-2026:p019:s0:fixed500o50:002,data/raw/luat-shtt-hn-2026.pdf,19,2,21 22,True,2,21 22,True,,
+A,q01,2,luat-shtt-hn-2026:p019:s0:fixed500o50:003,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+A,q01,3,luat-shtt-hn-2026:p014:s0:fixed500o50:001,data/raw/luat-shtt-hn-2026.pdf,14,2,14 15,True,2,14 15,True,,
+A,q02,1,luat-shtt-hn-2026:p019:s0:fixed500o50:004,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+A,q02,2,luat-shtt-hn-2026:p019:s0:fixed500o50:003,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+A,q02,3,luat-shtt-hn-2026:p028:s0:fixed500o50:004,data/raw/luat-shtt-hn-2026.pdf,28,2,32,True,2,32,True,,
+A,q03,1,luat-shtt-hn-2026:p030:s0:fixed500o50:001,data/raw/luat-shtt-hn-2026.pdf,30,2,34,True,2,34,True,,
+A,q03,2,luat-shtt-hn-2026:p024:s0:fixed500o50:001,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+A,q03,3,luat-shtt-hn-2026:p024:s0:fixed500o50:000,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+A,q04,1,luat-shtt-hn-2026:p024:s0:fixed500o50:002,data/raw/luat-shtt-hn-2026.pdf,24,2,27 28,True,2,27 28,True,,
+A,q04,2,luat-shtt-hn-2026:p024:s0:fixed500o50:001,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+A,q04,3,luat-shtt-hn-2026:p013:s0:fixed500o50:003,data/raw/luat-shtt-hn-2026.pdf,13,2,13 14,True,2,13 14,True,,
+A,q15,1,luat-shtt-hn-2026:p117:s0:fixed500o50:001,data/raw/luat-shtt-hn-2026.pdf,117,4,191,True,4,191,True,,
+A,q15,2,luat-shtt-hn-2026:p116:s0:fixed500o50:003,data/raw/luat-shtt-hn-2026.pdf,116,4,190 191,True,4,190 191,True,,
+A,q15,3,luat-shtt-hn-2026:p114:s0:fixed500o50:000,data/raw/luat-shtt-hn-2026.pdf,114,4,185 186,True,4,184 185 186,False,,
+A,f01,1,luat-shtt-hn-2026:p064:s0:fixed500o50:004,data/raw/luat-shtt-hn-2026.pdf,64,3,96,True,3,96,True,4,False
+A,f01,2,luat-shtt-hn-2026:p060:s0:fixed500o50:002,data/raw/luat-shtt-hn-2026.pdf,60,3,92 93,True,3,92 93,True,4,False
+A,f01,3,luat-shtt-hn-2026:p060:s0:fixed500o50:003,data/raw/luat-shtt-hn-2026.pdf,60,3,93,True,3,93,True,4,False
+A,f02,1,luat-shtt-hn-2026:p049:s0:fixed500o50:000,data/raw/luat-shtt-hn-2026.pdf,49,3,71,True,3,71,True,4,False
+A,f02,2,luat-shtt-hn-2026:p051:s0:fixed500o50:000,data/raw/luat-shtt-hn-2026.pdf,51,3,74,True,3,74,True,4,False
+A,f02,3,luat-shtt-hn-2026:p050:s0:fixed500o50:003,data/raw/luat-shtt-hn-2026.pdf,50,3,74,True,3,74,True,4,False
+B,q01,1,luat-shtt-hn-2026:p019:s0:para800:002,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+B,q01,2,luat-shtt-hn-2026:p014:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,14,2,14,True,2,14,True,,
+B,q01,3,luat-shtt-hn-2026:p013:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,13,2,14,True,2,14,True,,
+B,q02,1,luat-shtt-hn-2026:p019:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+B,q02,2,luat-shtt-hn-2026:p028:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,28,2,32,True,2,32,True,,
+B,q02,3,luat-shtt-hn-2026:p021:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,21,2,25,True,2,25,True,,
+B,q03,1,luat-shtt-hn-2026:p024:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+B,q03,2,luat-shtt-hn-2026:p030:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,30,2,34,True,2,34,True,,
+B,q03,3,luat-shtt-hn-2026:p024:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+B,q04,1,luat-shtt-hn-2026:p024:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+B,q04,2,luat-shtt-hn-2026:p024:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+B,q04,3,luat-shtt-hn-2026:p013:s0:para800:002,data/raw/luat-shtt-hn-2026.pdf,13,2,13,True,2,13,True,,
+B,q15,1,luat-shtt-hn-2026:p116:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,116,4,191,True,4,191,True,,
+B,q15,2,luat-shtt-hn-2026:p117:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,117,4,191,True,4,191,True,,
+B,q15,3,luat-shtt-hn-2026:p117:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,117,4,191,True,4,191,True,,
+B,f01,1,luat-shtt-hn-2026:p060:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,60,3,93,True,3,93,True,4,False
+B,f01,2,luat-shtt-hn-2026:p062:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,62,3,95,True,3,95,True,4,False
+B,f01,3,luat-shtt-hn-2026:p064:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,64,3,96,True,3,96,True,4,False
+B,f02,1,luat-shtt-hn-2026:p049:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,49,3,71,True,3,71,True,4,False
+B,f02,2,luat-shtt-hn-2026:p051:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,51,3,74,True,3,74,True,4,False
+B,f02,3,luat-shtt-hn-2026:p076:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,76,3,119,True,3,119,True,4,False
+C,q01,1,luat-shtt-hn-2026:p019:s0:para800:002,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+C,q01,2,luat-shtt-hn-2026:p014:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,14,2,14,True,2,14,True,,
+C,q01,3,luat-shtt-hn-2026:p013:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,13,2,14,True,2,14,True,,
+C,q02,1,luat-shtt-hn-2026:p019:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,19,2,22,True,2,22,True,,
+C,q02,2,luat-shtt-hn-2026:p028:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,28,2,32,True,2,32,True,,
+C,q02,3,luat-shtt-hn-2026:p021:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,21,2,25,True,2,25,True,,
+C,q03,1,luat-shtt-hn-2026:p024:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+C,q03,2,luat-shtt-hn-2026:p030:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,30,2,34,True,2,34,True,,
+C,q03,3,luat-shtt-hn-2026:p024:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+C,q04,1,luat-shtt-hn-2026:p024:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+C,q04,2,luat-shtt-hn-2026:p024:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,24,2,27,True,2,27,True,,
+C,q04,3,luat-shtt-hn-2026:p013:s0:para800:002,data/raw/luat-shtt-hn-2026.pdf,13,2,13,True,2,13,True,,
+C,q15,1,luat-shtt-hn-2026:p116:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,116,4,191,True,4,191,True,,
+C,q15,2,luat-shtt-hn-2026:p117:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,117,4,191,True,4,191,True,,
+C,q15,3,luat-shtt-hn-2026:p117:s0:para800:000,data/raw/luat-shtt-hn-2026.pdf,117,4,191,True,4,191,True,,
+C,f01,1,luat-shtt-hn-2026:p107:s0:para800:001,data/raw/luat-shtt-hn-2026.pdf,107,4,169,True,4,169,True,4,True
+C,f01,2,luat-shtt-hn-2026:p106:s0:para800:002,data/raw/luat-shtt-hn-2026.pdf,106,4,167,True,4,167,True,4,True
+C,f01,3,luat-shtt-hn-2026:p106:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,106,4,167,True,4,167,True,4,True
+C,f02,1,luat-shtt-hn-2026:p101:s0:para800:002,data/raw/luat-shtt-hn-2026.pdf,101,4,159,True,4,159,True,4,True
+C,f02,2,luat-shtt-hn-2026:p106:s0:para800:004,data/raw/luat-shtt-hn-2026.pdf,106,4,167,True,4,167,True,4,True
+C,f02,3,luat-shtt-hn-2026:p106:s0:para800:003,data/raw/luat-shtt-hn-2026.pdf,106,4,167,True,4,167,True,4,True

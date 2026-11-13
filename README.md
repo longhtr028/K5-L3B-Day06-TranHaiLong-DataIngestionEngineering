@@ -10,7 +10,7 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 ## Bắt đầu nhanh
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm còn trống, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
 
 ## 1. Xây pipeline
 
@@ -45,3 +45,36 @@ Dùng cùng dữ liệu, model và câu hỏi cho cả ba cấu hình. Tách **1
 | Cách nộp bài | [SUBMISSION.md](SUBMISSION.md) |
 
 [data/format-example.json](data/format-example.json) chỉ minh họa định dạng, không phải corpus đủ điều kiện. Phần xử lý và benchmark do bạn tự hiện thực; không bắt buộc xây chatbot.
+
+---
+
+## Bài làm: cách chạy lại
+
+Corpus: Luật Sở hữu trí tuệ (văn bản hợp nhất 2026), 140 trang PDF, 137 trang nội dung. Xem [data/manifest.json](data/manifest.json) và [data/manifest_pages.csv](data/manifest_pages.csv). Embedding: `intfloat/multilingual-e5-small` chạy local (384 chiều, chi phí 0). Store: PostgreSQL 16 + pgvector 0.8.7, cosine, exact search.
+
+```bash
+cd starter
+python3 -m venv .venv && source .venv/bin/activate
+python -m pip install -r requirements.txt
+cp .env.example .env            # chỉ cần DATABASE_URL; EMBEDDING_MODEL để trống hoặc = intfloat/multilingual-e5-small
+docker compose -p day6_student_starter up -d --wait
+python scripts/check_setup.py
+python ../benchmark/verify_evidence.py        # kiểm chứng 28/28 evidence trước khi chạy
+python -m src.run ingest                      # chạy 2 lần: lần 2 phải là 0 vector mới, số dòng không đổi
+python scripts/check_reingest.py              # kiểm tra tài liệu đổi: chunk cũ bị xóa, chỉ embed lại chunk đổi
+python -m src.run bench --split dev           # chọn chiến lược trên dev
+python -m src.run bench                       # dev + test, ghi trace và metrics
+python scripts/build_audit_samples.py         # tạo mẫu audit (không sinh nhãn)
+python scripts/summarize_audit.py             # tổng hợp nhãn thủ công
+```
+
+| Thành phần | Đường dẫn |
+|---|---|
+| Code pipeline | `starter/src/` (ingestion, chunking, embeddings, store, evaluation, run) |
+| Cấu hình A/B/C + quy tắc chọn | `starter/configs/strategies.json`, `artifacts/experiment_log.csv` |
+| Benchmark + gold + split | `benchmark/questions.jsonl`, `benchmark/make_split.py`, `benchmark/evidence_check.csv` |
+| Trace top-3 đầy đủ | `starter/results/traces/traces_all.jsonl` |
+| Chỉ số dev/test | `starter/results/metrics_all.md` |
+| Thống kê ingest, lỗi, nạp lại | `starter/results/ingest_runs.json`, `ingest_errors.csv`, `reingest_check.json` |
+| Nhãn thủ công | `starter/results/audit/*_labels.csv`, `audit_summary.md` |
+| Báo cáo | `report/individual/` |

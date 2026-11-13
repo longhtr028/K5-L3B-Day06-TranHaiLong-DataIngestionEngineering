@@ -1,0 +1,24 @@
+{
+  "1_first_ingest": {
+    "chunks": 40,
+    "written_new_vector": 40,
+    "metadata_only": 0,
+    "deleted_obsolete": 0,
+    "rows": 40
+  },
+  "2_same_again": {
+    "chunks": 40,
+    "written_new_vector": 0,
+    "metadata_only": 40,
+    "deleted_obsolete": 0,
+    "rows": 40
+  },
+  "3_changed_doc": {
+    "chunks": 37,
+    "written_new_vector": 1,
+    "metadata_only": 36,
+    "deleted_obsolete": 3,
+    "rows": 37
+  },
+  "ok": true
+}

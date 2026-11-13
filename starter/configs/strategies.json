@@ -1,0 +1,25 @@
+{
+  "embedding": {
+    "provider": "local (sentence-transformers)",
+    "model": "intfloat/multilingual-e5-small",
+    "device": "cpu",
+    "query_prefix": "query: ",
+    "document_prefix": "passage: ",
+    "normalize": true
+  },
+  "store": {"backend": "PostgreSQL 16 + pgvector", "table": "chunks", "metric": "cosine (<=>)", "search": "exact (no ANN index)"},
+  "top_k": 3,
+  "indexes": {
+    "fixed500o50": {"chunker": "fixed_size", "size": 500, "overlap": 50},
+    "para800": {"chunker": "by_paragraph", "max_size": 800}
+  },
+  "strategies": {
+    "A": {"index": "fixed500o50", "use_filter": false,
+          "hypothesis": "Baseline. Fixed 500-char windows cut clauses mid-sentence; long evidence (>250 chars) is often split, lowering Evidence Hit@3."},
+    "B": {"index": "para800", "use_filter": false,
+          "hypothesis": "Paragraph/khoản-aligned chunks keep each legal clause whole, raising Evidence Hit@3 and coherence vs A at the cost of fewer, longer chunks."},
+    "C": {"index": "para800", "use_filter": true, "filter_fields": ["part"],
+          "hypothesis": "Same chunks as B; adding the user-supplied `part` filter only on questions that carry one removes look-alike clauses from other Parts (e.g. Art. 93 vs Art. 169), raising Hit@1 on filter questions and leaving other questions unchanged."}
+  },
+  "selection_rule": "Decided before any test run: pick the strategy with the highest dev Evidence Hit@3; ties broken by dev Hit@1, then by dev filter-scope compliance, then by fewer chunks (cheaper index). Test is run once after the choice and is not used to change parameters."
+}

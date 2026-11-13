@@ -2,3 +2,11 @@
 psycopg[binary]==3.3.8
 pypdf>=5,<7
 python-dotenv>=1,<2
+
+# Local embedding model used in this submission (intfloat/multilingual-e5-small, 384 dims).
+# Versions actually installed for the reported run:
+sentence-transformers==6.3.0
+torch==2.15.0
+transformers==5.22.2
+huggingface_hub==2.4.0
+numpy==2.5.4

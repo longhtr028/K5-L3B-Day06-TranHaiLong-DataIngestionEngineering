@@ -1,4 +1,4 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed_size (char windows per page segment),500,50,"document_id, source, page, part, chapter, articles",none,intfloat/multilingual-e5-small (local; 384d; query:/passage: prefixes; cosine exact in pgvector),"Baseline: fixed windows cut clauses mid-sentence, so long evidence (>250 chars) is often split and Evidence Hit@3 drops.",9/19,12/19,1/7,3/7,"index fixed500o50, 660 chunks"
+B,by_paragraph (khoản/điểm lines grouped; new chunk at every Phần/Chương/Mục/Điều heading),max 800,0,"document_id, source, page, part, chapter, articles",none,same as A,"Clause-aligned chunks keep each legal clause whole: higher Evidence Hit@3 and coherence than A, with fewer, longer chunks.",11/19,11/19,4/7,5/7,"index para800, 532 chunks"
+C,same index as B,max 800,0,"document_id, source, page, part, chapter, articles",part = value given with the question (only on questions that carry a filter; others run unfiltered),same as A,"Same chunks as B; the user-supplied part filter removes look-alike clauses from other Parts, so Hit@1 on filter questions rises and other questions are unchanged.",13/19,14/19,6/7,7/7,"SELECTED on dev 2026-11-13 21:35 by pre-registered rule (highest dev Evidence Hit@3: C 14/19 > A 12/19 > B 11/19), before any test run"

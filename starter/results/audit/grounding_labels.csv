@@ -1,0 +1,22 @@
+strategy,qid,filter_applied,top3,auto_evidence_hit3,grounding_0_2,reason,labeller
+A,q01,null,"p19/Đ21,22 | p19/Đ22 | p14/Đ14,15",True,2,"r2 chứa nguyên văn evidence (Điều 22, tr.19).",Claude (AI) — học viên cần review
+A,q02,null,p19/Đ22 | p19/Đ22 | p28/Đ32,True,2,r2 chứa đủ quyền làm bản sao dự phòng + giới hạn không chuyển giao.,Claude (AI) — học viên cần review
+A,q03,null,p30/Đ34 | p24/Đ27 | p24/Đ27,False,1,"r2 có 'một trăm năm' nhưng mở đầu giữa câu, chủ thể 'tác phẩm điện ảnh' chỉ có ở r3 bị cắt; phải ghép 2 mảnh mới đủ.",Claude (AI) — học viên cần review
+A,q04,null,"p24/Đ27,28 | p24/Đ27 | p13/Đ13,14",True,2,r1 chứa nguyên văn evidence (Điều 27 khoản 2 điểm b).,Claude (AI) — học viên cần review
+A,q15,null,"p117/Đ191 | p116/Đ190,191 | p114/Đ185,186",False,0,"Đúng Điều 191 nhưng con số 35% nằm ở window trước, không có trong top-3; không trả lời được 'bao nhiêu'.",Claude (AI) — học viên cần review
+A,f01,null,"p64/Đ96 | p60/Đ92,93 | p60/Đ93",False,0,"Cả 3 chunk thuộc Phần 3 (Điều 93, 96 — văn bằng sở hữu công nghiệp), sai phạm vi giống cây trồng; dễ dẫn tới đáp án sai 20 năm cho sáng chế.",Claude (AI) — học viên cần review
+A,f02,null,p49/Đ71 | p51/Đ74 | p50/Đ74,False,0,"Top-3 là Điều 71, 74 (thiết kế bố trí, nhãn hiệu) — không có tính mới của giống cây trồng.",Claude (AI) — học viên cần review
+B,q01,null,p19/Đ22 | p14/Đ14 | p13/Đ14,True,2,r1 = Điều 22 có tiêu đề + câu evidence trọn vẹn.,Claude (AI) — học viên cần review
+B,q02,null,p19/Đ22 | p28/Đ32 | p21/Đ25,True,2,r1 chứa evidence + cả ngoại lệ cho phần mềm cung cấp dạng dịch vụ.,Claude (AI) — học viên cần review
+B,q03,null,p24/Đ27 | p30/Đ34 | p24/Đ27,True,2,"r1 = Điều 27 từ tiêu đề đến hết điểm a, đủ chủ thể và điều kiện 25 năm.",Claude (AI) — học viên cần review
+B,q04,null,p24/Đ27 | p24/Đ27 | p13/Đ13,True,2,"r1 = điểm b, c Điều 27 trọn vẹn.",Claude (AI) — học viên cần review
+B,q15,null,p116/Đ191 | p117/Đ191 | p117/Đ191,True,2,"r3 có điểm c (35%, lần đầu, trước thuế, không nhận lần sau); r1 cho câu dẫn 'khi không có thỏa thuận' cùng Điều 191.",Claude (AI) — học viên cần review
+B,f01,null,p60/Đ93 | p62/Đ95 | p64/Đ96,False,0,"r1 Điều 93 (Phần 3) nói thời hạn bằng sáng chế/nhãn hiệu — sai phạm vi, gây trả lời sai.",Claude (AI) — học viên cần review
+B,f02,null,p49/Đ71 | p51/Đ74 | p76/Đ119,False,0,"Top-3 thuộc Phần 3 (Điều 71, 74, 119); không có Điều 159.",Claude (AI) — học viên cần review
+C,q01,null,p19/Đ22 | p14/Đ14 | p13/Đ14,True,2,"Như B (không có filter, cùng kết quả).",Claude (AI) — học viên cần review
+C,q02,null,p19/Đ22 | p28/Đ32 | p21/Đ25,True,2,Như B.,Claude (AI) — học viên cần review
+C,q03,null,p24/Đ27 | p30/Đ34 | p24/Đ27,True,2,Như B.,Claude (AI) — học viên cần review
+C,q04,null,p24/Đ27 | p24/Đ27 | p13/Đ13,True,2,Như B.,Claude (AI) — học viên cần review
+C,q15,null,p116/Đ191 | p117/Đ191 | p117/Đ191,True,2,Như B.,Claude (AI) — học viên cần review
+C,f01,"{""part"": 4}",p107/Đ169 | p106/Đ167 | p106/Đ167,True,2,"Filter part=4: r1 = Điều 169 trọn (25 năm cây thân gỗ / 20 năm loại khác), có trang 107.",Claude (AI) — học viên cần review
+C,f02,"{""part"": 4}",p101/Đ159 | p106/Đ167 | p106/Đ167,True,2,"Filter part=4: r1 = Điều 159 trọn, đủ cả 3 mốc 1 năm / 6 năm / 4 năm.",Claude (AI) — học viên cần review

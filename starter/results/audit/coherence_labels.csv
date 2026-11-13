@@ -1,0 +1,31 @@
+position_id,page,char_offset,strategy,chunk_id,chunk_chars,coherence_0_2,reason,labeller
+pos01,10,1051,A,luat-shtt-hn-2026:p010:s0:fixed500o50:002,499,1,Bắt đầu giữa khoản 2 Điều 8a (mất chủ thể 'Chủ sở hữu ... được sử dụng'); khoản 3 đọc được nhưng bị cắt cuối ('có li').,Claude (AI) — học viên cần review
+pos01,10,1051,B,luat-shtt-hn-2026:p010:s0:para800:001,638,2,"Tiêu đề Điều 8a + khoản 1, 2 trọn vẹn.",Claude (AI) — học viên cần review
+pos01,10,1051,C,luat-shtt-hn-2026:p010:s0:para800:001,638,2,"Cùng chunk với B (C dùng chung index para800). Tiêu đề Điều 8a + khoản 1, 2 trọn vẹn.",Claude (AI) — học viên cần review
+pos02,20,1029,A,luat-shtt-hn-2026:p020:s0:fixed500o50:002,500,1,"Tiêu đề Điều 25 bị cắt ('i lệ không xâm phạm'); điểm a trọn vẹn, điểm b bị cắt giữa câu.",Claude (AI) — học viên cần review
+pos02,20,1029,B,luat-shtt-hn-2026:p020:s0:para800:002,707,2,Tiêu đề Điều 25 + câu dẫn khoản 1 + điểm a–c trọn; danh sách tiếp tục ở chunk sau nhưng mỗi điểm tự hiểu.,Claude (AI) — học viên cần review
+pos02,20,1029,C,luat-shtt-hn-2026:p020:s0:para800:002,707,2,Cùng chunk với B (C dùng chung index para800). Tiêu đề Điều 25 + câu dẫn khoản 1 + điểm a–c trọn; danh sách tiếp tục ở chunk sau nhưng mỗi điểm tự hiểu.,Claude (AI) — học viên cần review
+pos03,30,1063,A,luat-shtt-hn-2026:p030:s0:fixed500o50:002,500,1,"Mở đầu bằng đuôi Điều 34; Điều 35 khoản 1–3 trọn, khoản 4 bị cắt ('của Luậ').",Claude (AI) — học viên cần review
+pos03,30,1063,B,luat-shtt-hn-2026:p030:s0:para800:002,578,2,Điều 35 khoản 1–5 trọn vẹn kèm tiêu đề.,Claude (AI) — học viên cần review
+pos03,30,1063,C,luat-shtt-hn-2026:p030:s0:para800:002,578,2,Cùng chunk với B (C dùng chung index para800). Điều 35 khoản 1–5 trọn vẹn kèm tiêu đề.,Claude (AI) — học viên cần review
+pos04,40,1213,A,luat-shtt-hn-2026:p040:s0:fixed500o50:002,499,0,Mở đầu giữa câu (thiếu chủ thể 'cơ quan ...'); khoản 2 bị cắt trước động từ chính 'hủy bỏ hiệu lực' nên không hiểu hệ quả.,Claude (AI) — học viên cần review
+pos04,40,1213,B,luat-shtt-hn-2026:p040:s0:para800:003,462,2,"Khoản 2 Điều 55 trọn câu, đủ chủ thể – điều kiện – hệ quả; thiếu tiêu đề điều nhưng vẫn tự hiểu.",Claude (AI) — học viên cần review
+pos04,40,1213,C,luat-shtt-hn-2026:p040:s0:para800:003,462,2,"Cùng chunk với B (C dùng chung index para800). Khoản 2 Điều 55 trọn câu, đủ chủ thể – điều kiện – hệ quả; thiếu tiêu đề điều nhưng vẫn tự hiểu.",Claude (AI) — học viên cần review
+pos05,50,976,A,luat-shtt-hn-2026:p050:s0:fixed500o50:002,500,1,Khoản 1 Điều 74 mất phần đầu ('Nhãn hiệu được coi là ... được tạo'); điểm a khoản 2 bị cắt trước điều kiện 'trước ngày nộp đơn'.,Claude (AI) — học viên cần review
+pos05,50,976,B,luat-shtt-hn-2026:p050:s0:para800:001,620,2,"Tiêu đề Điều 74, khoản 1 trọn, câu dẫn khoản 2 + điểm a trọn.",Claude (AI) — học viên cần review
+pos05,50,976,C,luat-shtt-hn-2026:p050:s0:para800:001,620,2,"Cùng chunk với B (C dùng chung index para800). Tiêu đề Điều 74, khoản 1 trọn, câu dẫn khoản 2 + điểm a trọn.",Claude (AI) — học viên cần review
+pos06,60,980,A,luat-shtt-hn-2026:p060:s0:fixed500o50:002,500,1,Bắt đầu giữa từ ('ược bảo hộ'); khoản 3 Điều 92 và khoản 1 Điều 93 trọn; trộn 2 điều khác nhau.,Claude (AI) — học viên cần review
+pos06,60,980,B,luat-shtt-hn-2026:p060:s0:para800:002,491,2,"Khoản 2, 3 Điều 92 trọn câu; không có tiêu đề điều nhưng nội dung tự đủ.",Claude (AI) — học viên cần review
+pos06,60,980,C,luat-shtt-hn-2026:p060:s0:para800:002,491,2,"Cùng chunk với B (C dùng chung index para800). Khoản 2, 3 Điều 92 trọn câu; không có tiêu đề điều nhưng nội dung tự đủ.",Claude (AI) — học viên cần review
+pos07,70,899,A,luat-shtt-hn-2026:p070:s0:fixed500o50:001,499,1,Khoản 2 Điều 110 mất phần đầu; khoản 3 bị cắt đúng chỗ thời hạn ('không quá b...' — mất 'bảy tháng').,Claude (AI) — học viên cần review
+pos07,70,899,B,luat-shtt-hn-2026:p070:s0:para800:001,746,2,"Khoản 3, 4 Điều 110 trọn vẹn (có thời hạn 'bảy tháng').",Claude (AI) — học viên cần review
+pos07,70,899,C,luat-shtt-hn-2026:p070:s0:para800:001,746,2,"Cùng chunk với B (C dùng chung index para800). Khoản 3, 4 Điều 110 trọn vẹn (có thời hạn 'bảy tháng').",Claude (AI) — học viên cần review
+pos08,80,810,A,luat-shtt-hn-2026:p080:s0:fixed500o50:001,499,1,Điều 124 khoản 1 điểm a–d trọn; điểm đ bị cắt giữa từ.,Claude (AI) — học viên cần review
+pos08,80,810,B,luat-shtt-hn-2026:p080:s0:para800:001,760,2,Tiêu đề Điều 124 + khoản 1 trọn + khoản 2 điểm a–c; các điểm còn lại ở chunk sau.,Claude (AI) — học viên cần review
+pos08,80,810,C,luat-shtt-hn-2026:p080:s0:para800:001,760,2,Cùng chunk với B (C dùng chung index para800). Tiêu đề Điều 124 + khoản 1 trọn + khoản 2 điểm a–c; các điểm còn lại ở chunk sau.,Claude (AI) — học viên cần review
+pos09,90,961,A,luat-shtt-hn-2026:p090:s0:fixed500o50:002,500,1,"Bắt đầu giữa từ ('ờng hợp'), thiếu định nghĩa sáng chế phụ thuộc; cắt trước kết luận 'có thể chuyển giao quyền sử dụng sáng c...'.",Claude (AI) — học viên cần review
+pos09,90,961,B,luat-shtt-hn-2026:p090:s0:para800:001,595,1,"Điều 137 khoản 1 trọn, nhưng khoản 2 bị tách ở ranh giới câu: vế 'nếu chủ sở hữu sáng chế cơ bản không đáp ứng ... thì cơ quan nhà nước có thể chuyển giao' nằm ở chunk sau.",Claude (AI) — học viên cần review
+pos09,90,961,C,luat-shtt-hn-2026:p090:s0:para800:001,595,1,"Cùng chunk với B (C dùng chung index para800). Điều 137 khoản 1 trọn, nhưng khoản 2 bị tách ở ranh giới câu: vế 'nếu chủ sở hữu sáng chế cơ bản không đáp ứng ... thì cơ quan nhà nước có thể chuyển giao' nằm ở chunk sau.",Claude (AI) — học viên cần review
+pos10,100,500,A,luat-shtt-hn-2026:p100:s0:fixed500o50:001,499,1,Bắt đầu '152 và Điều 153 ...' thiếu chủ thể bị xử lý; khoản 4 trọn; khoản 5 bị cắt.,Claude (AI) — học viên cần review
+pos10,100,500,B,luat-shtt-hn-2026:p100:s0:para800:000,521,2,"Khoản 2, 3 Điều 156 trọn câu, đủ chủ thể và hệ quả.",Claude (AI) — học viên cần review
+pos10,100,500,C,luat-shtt-hn-2026:p100:s0:para800:000,521,2,"Cùng chunk với B (C dùng chung index para800). Khoản 2, 3 Điều 156 trọn câu, đủ chủ thể và hệ quả.",Claude (AI) — học viên cần review

@@ -1,0 +1,18 @@
+{
+  "corpus": "Luật Sở hữu trí tuệ (văn bản hợp nhất, 2026)",
+  "documents": [
+    {
+      "source_id": "luat-shtt-hn-2026",
+      "title": "Luật Sở hữu trí tuệ số 50/2005/QH11 — văn bản hợp nhất các lần sửa đổi, bổ sung đến Luật số 11/2026/QH16",
+      "source_path_or_url": "data/raw/luat-shtt-hn-2026.pdf",
+      "original_url": null,
+      "license_or_permission": "Văn bản quy phạm pháp luật — không thuộc phạm vi bảo hộ quyền tác giả (Điều 15 khoản 2 của chính Luật này, trang 14 PDF). Được phép xử lý và tái phân phối; không chứa dữ liệu cá nhân ngoài tên người dựng file trong metadata PDF.",
+      "accessed_at": "2026-11-13 (thời điểm file xuất hiện trên máy, theo mtime; URL gốc không được ghi lại khi tải)",
+      "snapshot_version": "PDF CreationDate 2026-09-29, ModDate 2026-10-08; hợp nhất đến Luật số 11/2026/QH16 (23/8/2026). sha256 839e0991f12273e3414b0a5f9f373d5e701953f0a5113c2b642e88e9a125e06c (cột file_sha256 trong data/manifest_pages.csv).",
+      "language": "vi",
+      "physical_pages": 140,
+      "page_counting_rule": "Đếm trang có ≥500 ký tự văn bản thân (cỡ chữ ≥13pt) sau chuẩn hóa. Loại: trang 1 (trang đầu: tiêu đề + danh sách luật sửa đổi, vẫn được nạp nhưng không tính), trang chỉ có chú thích cuối trang (137, 138). Chú thích cuối trang (12pt) không được nạp ở mọi trang. Chi tiết từng trang: data/manifest_pages.csv (sinh bởi `python -m src.run ingest`).",
+      "filter_field": "part — Phần của Luật (1 Những quy định chung, 2 Quyền tác giả và quyền liên quan, 3 Quyền sở hữu công nghiệp, 4 Quyền đối với giống cây trồng, 5 Bảo vệ quyền SHTT, 6 Điều khoản thi hành; 0 = phần mở đầu trước Phần thứ nhất). Lấy từ tiêu đề 'Phần thứ ...' trong văn bản."
+    }
+  ]
+}
